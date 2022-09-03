@@ -1,7 +1,6 @@
 {
-  "name": "start_pack",
+  "name": "interno",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +18,14 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.54.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timur-1999/Interno.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Timur-1999/Interno/issues"
+  },
+  "homepage": "https://github.com/Timur-1999/Interno#readme",
+  "description": ""
 }
