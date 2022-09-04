@@ -1,6 +1,27 @@
 @import 'libs/reboot';
+@import 'libs/slick';
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&display=swap');
 
 @import 'base/variables';
 @import 'base/mixins';
 
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/descr';
+@import 'blocks/button';
+@import 'blocks/introduction';
+@import 'blocks/resume';
+@import 'blocks/phone';
+@import 'blocks/people';
+@import 'blocks/partners';
+@import 'blocks/furnishings';
+@import 'blocks/achievements';
+@import 'blocks/connect';

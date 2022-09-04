@@ -1,0 +1,15 @@
+.menu{
+    &__link{
+        transition: 0.17s all;
+        margin-left: 40px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: $main-color;
+        &:hover{
+            color: $copper-color;
+        }
+    }
+}

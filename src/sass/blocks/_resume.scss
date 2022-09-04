@@ -1,0 +1,18 @@
+.resume{
+    margin-top: 100px;
+    height: 635px;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 530px 592px;
+        justify-content: space-between;
+    }
+    &__info{
+        align-self: center;
+    }
+    &__descr{
+        margin-top: 42px;
+    }
+    &__btn{
+        margin-top: 50px;
+    }
+}

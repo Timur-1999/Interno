@@ -1,0 +1,48 @@
+.btn{
+    width: 207px;
+    height: 71px;
+    background: $main-color;
+    border-radius: 18px;
+    font-family: 'Jost';
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    &__b-arrow{
+        span{
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: $copper-color;
+            &:nth-child(1){
+                transform-origin: right;
+                transform: rotate(55deg) translate(2px, 1px);
+            }
+            &:nth-child(3){
+                transform-origin: right;
+                transform: rotate(-55deg)translate(2px, -1px);
+            }
+        }
+    }
+    &_chevron{
+        position: relative;
+        span{
+            position: absolute;
+            left: 50%;
+            display: block;
+            width: 8px;
+            height: 2px;
+            background-color: $main-color;
+            &:nth-child(1){
+                transform-origin: bottom right;
+                transform: translateX(-50%) rotate(45deg);
+            }
+            &:nth-child(2){
+                transform-origin: top right;
+                transform: translateX(-50%) rotate(-45deg);
+            }
+        }
+    }
+}

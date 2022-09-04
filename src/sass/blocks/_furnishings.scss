@@ -1,0 +1,33 @@
+.furnishings{
+    margin-top: 100px;
+    &__subtitle{
+        margin-top: 20px;
+    }
+    &__items{
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(2, 590px);
+        column-gap: 20px;
+        row-gap: 60px;
+    }
+    &__item{
+       display: grid;
+       grid-template-columns: repeat(2, auto);
+       grid-template-rows: repeat(2, auto); 
+       row-gap: 25px;
+    }
+    &__img{
+        grid-column: 1/3;
+    }
+    &__descr{
+        grid-column: 1/2;
+    }
+    &__btn{
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        background-color: $bg-color;
+        grid-column: 2/3;
+        justify-self: end;
+    }
+}

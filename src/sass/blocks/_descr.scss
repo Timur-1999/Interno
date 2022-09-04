@@ -1,0 +1,9 @@
+.descr{
+    font-family: 'Jost';
+    font-size: 22px;
+    line-height: 33px;
+    color: $descr-color;
+    &_center{
+        text-align: center;
+    }
+}

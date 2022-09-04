@@ -1,0 +1,25 @@
+.connect{
+    margin-top: 100px;
+    &__wrapper{
+        padding: 100px 0px 95px;
+        height: 414px;
+        background: $main-color;
+        border-radius: 70px;
+    }
+    &__title{
+        color: #fff;
+    }
+    &__descr{
+        margin-top: 9px;
+        color: #fff;
+    }
+    &__btn{
+        margin: 31px auto;
+        background: $copper-color;
+    }
+    &__b-arrow{
+        span{
+            background: $main-color;
+        }
+    }
+}
