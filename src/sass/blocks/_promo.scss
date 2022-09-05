@@ -1,9 +1,11 @@
 .promo{
+    margin-top: 106px;
     height: 831px;
     background: url('../img/bg.png') center (center)/100% 100% no-repeat;
     padding: 188px 0px 260px;
     &__descr{
         margin-top: 19px;
+        width: 60%;
     }
     &__btn{
         margin-top: 35px;

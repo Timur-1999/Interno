@@ -1,0 +1,205 @@
+@media (max-width: 1200px){
+    .container{
+        width: 960px;
+        margin: 0 auto;
+    }
+    .title_fz50{
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .introduction{
+        &__items{
+            grid-template-columns: repeat(3, 320px);
+        }
+    }
+    .resume{
+        height: 530px;
+        &__wrapper{
+            grid-template-columns: 430px 492px;
+        }
+        &__img{
+            width: 100%;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        &__descr{
+            margin-top: 24px;
+        }
+        &__btn{
+            margin-top: 35px;
+        }
+    }
+}
+@media (max-width: 992px){
+    .container{
+        width: 720px;
+        margin: 0 auto;
+    }
+    .title_fz80{
+        font-size: 70px;
+        line-height: 86px;
+    }
+    .title_fz50{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .descr{
+        font-size: 16px;
+        line-height: 27px;
+    }
+    .menu{
+        &__link{
+            margin-left: 20px;
+        }
+    }
+    .introduction{
+        padding-top: 60px;
+        &__items{
+            grid-template-columns: repeat(3, 240px);
+        }
+        &__item{
+            padding: 55px 20px 50px;
+        }
+    }
+    .resume{
+        margin-top: 60px;
+        &__wrapper{
+            grid-template-columns: 330px 380px;
+        }
+        &__btn{
+            margin-top: 25px;
+        }
+    }
+    .phone{
+        margin-top: 20px;
+        &__icon{
+            width: 73px;
+            height: 73px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .container{
+        width: 540px;
+        margin: 0 auto;
+    }
+    .title_fz50{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .title_fz25{
+        font-size: 23px;
+        line-height: 22px;
+    }
+    .descr{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .menu{
+        display: none;
+    }
+    .header{
+        .hamburger{
+            position: absolute;
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 4px;
+            overflow: hidden;
+            span{
+                display: block;
+                height: 3px;
+                background-color: $main-color;
+                &:nth-child(1){
+                    width: 100%;
+                }
+                &:nth-child(2){
+                    width: 85%;
+                    align-self: center;
+                }
+                &:nth-child(3){
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .introduction{
+        padding-top: 40px;
+        &__items{
+            grid-template-columns: repeat(3, 180px);
+        }
+        &__item{
+            padding: 35px 10px 35px;
+        }
+        &__descr{
+            margin-top: 14px;
+        }
+        &__btn{
+            margin-top: 15px;
+        }
+    }
+    .resume{
+        &__wrapper{
+            grid-template-columns: 540px;
+            text-align: center;
+        }
+        &__btn{
+            margin: 20px auto 60px;
+        }
+    }
+    .phone{
+        margin-top: 40px;
+        flex-direction: column;
+        &__descr{
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+}
+@media (max-width: 576px){
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .title_fz80{
+        font-size: 37px;
+        line-height: 47px;
+    }
+    .title_fz50{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .descr{
+        font-size: 11px;
+        line-height: 18px;
+    }
+    .promo{
+        margin-top: 106px;
+        height: 550px;
+        background: url(../img/bg.png) center center/cover no-repeat;
+        padding: 135px 0 160px;
+    }
+    .introduction{
+        &__items{
+            grid-template-columns: 290px;
+        }
+        &__item{
+            padding: 35px 60px 30px;
+        }
+    }
+    .resume{
+        &__wrapper{
+            grid-template-columns: 290px;
+        }
+        &__btn{
+            margin: 20px auto 40px;
+        }
+    }
+}
