@@ -1,0 +1,47 @@
+.recent{
+    margin-top: 130px;
+    padding: 13px 0px 40px;
+    &__subtitle{
+        margin-top: 21px;
+    }
+    &__items{
+        margin-top: 70px;
+        padding-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 366px);
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+    &__item{
+        padding: 21px 21px 40px;
+        display: grid;
+        border: 1px solid #E7E7E7;
+        border-radius: 62px;
+    }
+    &__img{
+        width: 322px;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__title{
+        margin-top: 15px;
+        letter-spacing: 0.5px;
+    }
+    &__date{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__btn{
+        width: 52px;
+        height: 52px;
+        border-radius: 100%;
+        background-color: $bg-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
