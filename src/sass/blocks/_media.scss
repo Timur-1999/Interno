@@ -205,10 +205,11 @@
         margin-top: 0;
     }
     .partners{
+        margin-top: 60px;
         &__wrapper{
             flex-wrap: wrap;
             justify-content: center;
-            column-gap: 55px;
+            column-gap: 75px;
             row-gap: 25px;
         }
         &__item{
