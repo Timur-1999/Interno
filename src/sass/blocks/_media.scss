@@ -7,6 +7,10 @@
         font-size: 45px;
         line-height: 55px;
     }
+    .title_fz25{
+        font-size: 22px;
+        line-height: 33px;
+    }
     .introduction{
         &__items{
             grid-template-columns: repeat(3, 320px);
@@ -29,6 +33,22 @@
         }
         &__btn{
             margin-top: 35px;
+        }
+    }
+    .people{
+        &__item{
+            padding: 40px 25px 40px;
+        }
+        &__descr{
+            margin-top: 16px;
+            line-height: 28px;
+        }
+    }
+    .person{
+        gap: 15px;
+        &__descr{
+            font-size: 16px;
+            line-height: 24px;
         }
     }
 }
@@ -78,6 +98,14 @@
             width: 73px;
             height: 73px;
         }
+    }
+    .people{
+        &__item{
+            padding: 40px 35px;
+        }
+    }
+    .person{
+        margin-top: 20px;
     }
 }
 @media (max-width: 768px){
@@ -162,6 +190,33 @@
             line-height: 32px;
         }
     }
+    .people{
+        margin-top: 690px;
+        &__wrapper{
+            padding: 103px 50px 103px;
+            height: 579px;
+        }
+        &__item{
+            margin: 8px 0;
+            height: 220px;
+        }
+    }
+    .person{
+        margin-top: 0;
+    }
+    .partners{
+        &__wrapper{
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 55px;
+            row-gap: 25px;
+        }
+        &__item{
+            &:nth-child(2){
+                order: 1;
+            }
+        }
+    }
 }
 @media (max-width: 576px){
     .container{
@@ -200,6 +255,33 @@
         }
         &__btn{
             margin: 20px auto 40px;
+        }
+    }
+    .people{
+        margin-top: 295px;
+        &__wrapper{
+            padding: 42px 30px 38px;
+            height: 495px;
+        }
+        &__items{
+            margin-top: 20px;
+        }
+        &__item{
+            padding: 40px 25px 40px;
+        }
+        &__descr{
+            text-align: center;
+        }
+    }
+    .person{
+        flex-direction: column;
+        gap: 5px;
+        &__img{
+            width: 64px;
+            height: 64px;
+        }
+        &__descr{
+            text-align: center;
         }
     }
 }
