@@ -48,4 +48,26 @@
             }
         }
     }
+    &__pageup{
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        width: 52px;
+        height: 52px;
+        border-radius: 100%;
+        background-color: $main-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(-90deg);
+        span{
+            background-color: $bg-color;
+        }
+        &:hover{
+            background-color: $copper-color;
+            span{
+                background-color: $main-color;
+            }
+        }
+    }
 }

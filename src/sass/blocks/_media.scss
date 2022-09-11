@@ -191,7 +191,24 @@
         line-height: 22px;
     }
     .menu{
-        display: none;
+        transition: all 1.3s;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 36px;
+        .menu__link{
+            font-size: 34px;
+            margin-left: 40px;
+        }
+        &_active{
+            right: 0%;
+        }
     }
     .header{
         .hamburger{
@@ -206,7 +223,14 @@
             justify-content: space-between;
             border-radius: 4px;
             overflow: hidden;
+            transition: 0.17s all;
+            &:hover{
+                span{
+                    background-color: $copper-color;
+                }
+            }
             span{
+                transition: all .5s;
                 display: block;
                 height: 3px;
                 background-color: $main-color;
@@ -219,6 +243,23 @@
                 }
                 &:nth-child(3){
                     width: 100%;
+                }
+            }
+            &_active{
+                overflow: visible;
+                display: block;
+                span{
+                    &:nth-child(1){
+                        transform-origin: center center;
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    &:nth-child(3){
+                        transform-origin: center center;
+                        transform: rotate(-45deg);
+                    }
                 }
             }
         }
@@ -498,6 +539,16 @@
             display: grid;
             grid-template-columns: 272px;
             justify-content: center;
+        }
+    }
+    .header{
+        .hamburger{
+            right: 20px;
+        }
+    }
+    .menu{
+        &_active{
+            width: 100%;
         }
     }
 }
